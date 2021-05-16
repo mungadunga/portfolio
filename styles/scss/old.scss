@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+$mainFont: 'Source Sans Pro', sans-serif;
+$mainTheme: #eb4034;
+$cur1: white;
+$cur2: black;
+
+* {
+   margin: 0;
+   padding: 0;
+   font-family: $mainFont;
+}
+body {
+   overflow-x: hidden;
+}
+.Greeting {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   height: 92vh;
+   background-color: black;
+   .Greeting-title {
+      font-size: 5em;
+      font-weight: 700;
+      color: white;
+   }
+   .Greeting-em {
+      color: $mainTheme;
+      font-size: 2em;
+      display: flex;
+      justify-content: center;
+   }
+}
+.Themes {
+   height: 8vh;
+   display: flex;
+   justify-content: flex-end;
+   background-color: black;
+   button {
+      padding: 10px;
+      margin: 4px 2px;
+      border-radius: 100px;
+      cursor: pointer;
+      height: "50px";
+      width: "50px";
+      font-size: "100%",
+   }
+}
+.Themes-lightmode {
+   border: 2px solid rgb(153, 153, 153);
+   background-color: $cur1;
+   color: $cur2;
+}
+.Themes-darkmode {
+   border: 2px solid rgb(153, 153, 153);
+   background-color: $cur2;
+   color: $cur1;
+}
+.Themes-darkmode:hover, .Themes-lightmode:hover {
+   transform: rotate(360deg);
+   transition: 600ms;
+}
+
+// npm run scss
+
+
