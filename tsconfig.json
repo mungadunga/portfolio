@@ -19,7 +19,7 @@
     "sourceMap": true,
 
     // Output to single concatenated file
-    "outFile": "dist/bundle.js"
+    "outFile": "dist/script.js"
   },
   "include": ["src"]
 }

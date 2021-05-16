@@ -305,4 +305,4 @@ const Index = props => {
         React.createElement(App, { theme: theme ? "Dark" : "Light" })));
 };
 ReactDOM.render(React.createElement(Index, null), document.querySelector("#root"));
-//# sourceMappingURL=bundle.js.map
+//# sourceMappingURL=script.js.map
