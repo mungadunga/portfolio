@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,154 +8,6 @@
 body {
   font-family: "Source Sans Pro", sans-serif;
   overflow-x: hidden;
-}
-
-.DarkApp header {
-  display: flex;
-  justify-content: center;
-  height: 8vh;
-  background-color: black;
-}
-.DarkApp .DarkButton {
-  transition: 600ms;
-  padding: 10px;
-  margin: 4px 2px;
-  border-radius: 100px;
-  cursor: pointer;
-  height: 50px;
-  width: 50px;
-  border: 2px solid #999999;
-  font-size: 1.25em;
-}
-.DarkApp .DarkGreeting {
-  height: 92vh;
-  background-color: black;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: center;
-}
-.DarkApp .DarkGreeting .DarkGreeting-title {
-  margin-top: 30vh;
-  font-size: 5em;
-  font-weight: 700;
-  color: white;
-}
-.DarkApp .DarkGreeting .DarkGreeting-desc {
-  color: #eb4034;
-  font-size: 2em;
-}
-.DarkApp .DarkSkills {
-  height: 100vh;
-  background-color: black;
-}
-.DarkApp .DarkSkills .DarkSkills-title {
-  display: flex;
-  justify-content: center;
-  color: white;
-}
-.DarkApp .DarkSkills .DarkSkills-container {
-  margin: 1em;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-align: center;
-  overflow: visible;
-}
-.DarkApp .DarkSkills .DarkSkills-container .DarkSkills-frontend-title, .DarkApp .DarkSkills .DarkSkills-container .DarkSkills-backend-title {
-  margin: 1em;
-  display: flex;
-  justify-content: center;
-  color: black;
-  text-decoration: underline #eb4034;
-}
-.DarkApp .DarkSkills .DarkSkills-container .DarkSkills-frontend, .DarkApp .DarkSkills .DarkSkills-container .DarkSkills-backend {
-  margin: 1em;
-  display: grid;
-  justify-content: center;
-  justify-items: center;
-  grid-template-columns: 1fr 1fr;
-}
-.DarkApp .DarkSkills .DarkSkills-container .DarkSkills-logo {
-  margin: 10px;
-}
-.DarkApp .DarkSkills .DarkSkills-container .DarkSkills-logo:hover {
-  transition: 100ms;
-  cursor: pointer;
-  transform: scale(1.1);
-}
-.DarkApp .DarkSkills .DarkSkills-container .DarkSkills-smallcontainer1, .DarkApp .DarkSkills .DarkSkills-container .DarkSkills-smallcontainer2 {
-  background-color: white;
-  margin: 0.5em;
-  border-radius: 0.5em;
-  transition: 400ms;
-  box-shadow: 13px 13px 10px 7px rgba(255, 255, 255, 0.157);
-}
-.DarkApp .DarkSkills .DarkSkills-container .DarkSkills-smallcontainer1:hover, .DarkApp .DarkSkills .DarkSkills-container .DarkSkills-smallcontainer2:hover {
-  transform: scale(1.05);
-  transition: 400ms;
-}
-@media (max-width: 480px) {
-  .DarkApp .DarkSkills .DarkSkills-container {
-    flex-direction: column;
-    overflow: visible;
-    text-align: center;
-  }
-}
-.DarkApp .DarkSkills #DarkModal {
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
-  overflow: auto;
-  /* Enable scroll if needed */
-  background-color: black;
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
-}
-.DarkApp .DarkSkills #DarkModal #DarkModal-content {
-  border-radius: 0.3em;
-  background-color: #fefefe;
-  margin: 15% auto;
-  /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  /* Could be more or less, depending on screen size */
-}
-.DarkApp .DarkSkills #DarkModal #DarkModal-content p, .DarkApp .DarkSkills #DarkModal #DarkModal-content li {
-  margin-left: 2em;
-  font-size: 0.5em;
-}
-.DarkApp .DarkSkills #DarkModal #DarkModal-content .Modal-lang-title {
-  font-size: 1em;
-  margin-left: 1em;
-}
-.DarkApp .DarkSkills #DarkModal #DarkModal-content .Modal-lang-overall {
-  font-size: 0.5555555556em;
-  margin-left: 1.8em;
-}
-.DarkApp .DarkSkills #DarkModal #DarkModal-content .Modal-lang-subtitle {
-  font-size: 0.8333333333em;
-  margin-left: 1.2em;
-}
-.DarkApp .DarkSkills #DarkModal #DarkModal-content #DarkModal-times {
-  display: inline-block;
-  font-size: 1em;
-  margin-left: 1em;
-  cursor: pointer;
-}
-@media (max-width: 480px) {
-  .DarkApp .DarkSkills #DarkModal #DarkModal-content {
-    border-radius: 0.4em;
-  }
 }
 
 .LightApp header {
@@ -198,7 +51,13 @@ body {
   height: 100vh;
   background-color: white;
 }
+@media (max-width: 480px) {
+  .LightApp .LightSkills {
+    height: 150vh;
+  }
+}
 .LightApp .LightSkills .LightSkills-title {
+  text-decoration: underline #eb4034;
   display: flex;
   justify-content: center;
   color: black;
@@ -211,14 +70,14 @@ body {
   text-align: center;
   overflow: visible;
 }
-.LightApp .LightSkills .LightSkills-container .LightSkills-frontend-title, .LightApp .LightSkills .LightSkills-container .LightSkills-backend-title {
+.LightApp .LightSkills .LightSkills-container .LightSkills-frontend-title, .LightApp .LightSkills .LightSkills-container .LightSkills-backend-title, .LightApp .LightSkills .LightSkills-container .LightSkills-other-title {
   margin: 1em;
   display: flex;
   justify-content: center;
   color: black;
   text-decoration: underline #eb4034;
 }
-.LightApp .LightSkills .LightSkills-container .LightSkills-frontend, .LightApp .LightSkills .LightSkills-container .LightSkills-backend {
+.LightApp .LightSkills .LightSkills-container .LightSkills-frontend, .LightApp .LightSkills .LightSkills-container .LightSkills-backend, .LightApp .LightSkills .LightSkills-container .LightSkills-other {
   margin: 1em;
   display: grid;
   justify-content: center;
@@ -233,7 +92,7 @@ body {
   cursor: pointer;
   transform: scale(1.1);
 }
-.LightApp .LightSkills .LightSkills-container .LightSkills-smallcontainer1, .LightApp .LightSkills .LightSkills-container .LightSkills-smallcontainer2 {
+.LightApp .LightSkills .LightSkills-container .LightSkills-smallcontainer1, .LightApp .LightSkills .LightSkills-container .LightSkills-smallcontainer2, .LightApp .LightSkills .LightSkills-container .LightSkills-smallcontainer3 {
   border: 0.1em solid black;
   background-color: white;
   margin: 0.5em;
@@ -241,9 +100,11 @@ body {
   transition: 400ms;
   box-shadow: 13px 13px 10px 7px rgba(0, 0, 0, 0.41);
 }
-.LightApp .LightSkills .LightSkills-container .LightSkills-smallcontainer1:hover, .LightApp .LightSkills .LightSkills-container .LightSkills-smallcontainer2:hover {
-  transform: scale(1.05);
-  transition: 400ms;
+@media (min-width: 480px) {
+  .LightApp .LightSkills .LightSkills-container .LightSkills-smallcontainer1:hover, .LightApp .LightSkills .LightSkills-container .LightSkills-smallcontainer2:hover, .LightApp .LightSkills .LightSkills-container .LightSkills-smallcontainer3:hover {
+    transform: scale(1.05);
+    transition: 400ms;
+  }
 }
 @media (max-width: 480px) {
   .LightApp .LightSkills .LightSkills-container {
@@ -304,6 +165,172 @@ body {
 }
 @media (max-width: 480px) {
   .LightApp .LightSkills #LightModal #DarkModal-content {
+    border-radius: 0.4em;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  overflow-x: hidden;
+}
+
+.DarkApp header {
+  display: flex;
+  justify-content: center;
+  height: 8vh;
+  background-color: black;
+}
+.DarkApp .DarkButton {
+  transition: 600ms;
+  padding: 10px;
+  margin: 4px 2px;
+  border-radius: 100px;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  border: 2px solid #999999;
+  font-size: 1.25em;
+}
+.DarkApp .DarkGreeting {
+  height: 92vh;
+  background-color: black;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+.DarkApp .DarkGreeting .DarkGreeting-title {
+  margin-top: 30vh;
+  font-size: 5em;
+  font-weight: 700;
+  color: white;
+}
+.DarkApp .DarkGreeting .DarkGreeting-desc {
+  color: #eb4034;
+  font-size: 2em;
+}
+.DarkApp .DarkSkills {
+  height: 100vh;
+  background-color: black;
+}
+@media (max-width: 480px) {
+  .DarkApp .DarkSkills {
+    height: 150vh;
+  }
+}
+.DarkApp .DarkSkills .DarkSkills-title {
+  text-decoration: underline #eb4034;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.DarkApp .DarkSkills .DarkSkills-container {
+  margin: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  overflow: visible;
+}
+.DarkApp .DarkSkills .DarkSkills-container .DarkSkills-frontend-title, .DarkApp .DarkSkills .DarkSkills-container .DarkSkills-backend-title, .DarkApp .DarkSkills .DarkSkills-container .DarkSkills-other-title {
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+  color: black;
+  text-decoration: underline #eb4034;
+}
+.DarkApp .DarkSkills .DarkSkills-container .DarkSkills-frontend, .DarkApp .DarkSkills .DarkSkills-container .DarkSkills-backend, .DarkApp .DarkSkills .DarkSkills-container .DarkSkills-other {
+  margin: 1em;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+.DarkApp .DarkSkills .DarkSkills-container .DarkSkills-logo {
+  margin: 10px;
+}
+.DarkApp .DarkSkills .DarkSkills-container .DarkSkills-logo:hover {
+  transition: 100ms;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.DarkApp .DarkSkills .DarkSkills-container .DarkSkills-smallcontainer1, .DarkApp .DarkSkills .DarkSkills-container .DarkSkills-smallcontainer2, .DarkApp .DarkSkills .DarkSkills-container .DarkSkills-smallcontainer3 {
+  border: 0.1em solid #eb4034;
+  background-color: white;
+  margin: 0.5em;
+  border-radius: 0.5em;
+  transition: 400ms;
+}
+@media (min-width: 480px) {
+  .DarkApp .DarkSkills .DarkSkills-container .DarkSkills-smallcontainer1:hover, .DarkApp .DarkSkills .DarkSkills-container .DarkSkills-smallcontainer2:hover, .DarkApp .DarkSkills .DarkSkills-container .DarkSkills-smallcontainer3:hover {
+    transform: scale(1.05);
+    transition: 400ms;
+  }
+}
+@media (max-width: 480px) {
+  .DarkApp .DarkSkills .DarkSkills-container {
+    flex-direction: column;
+    overflow: visible;
+    text-align: center;
+  }
+}
+.DarkApp .DarkSkills #DarkModal {
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+.DarkApp .DarkSkills #DarkModal #DarkModal-content {
+  border-radius: 0.3em;
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+}
+.DarkApp .DarkSkills #DarkModal #DarkModal-content p, .DarkApp .DarkSkills #DarkModal #DarkModal-content li {
+  margin-left: 2em;
+  font-size: 0.5em;
+}
+.DarkApp .DarkSkills #DarkModal #DarkModal-content .Modal-lang-title {
+  font-size: 1em;
+  margin-left: 1em;
+}
+.DarkApp .DarkSkills #DarkModal #DarkModal-content .Modal-lang-overall {
+  font-size: 0.5555555556em;
+  margin-left: 1.8em;
+}
+.DarkApp .DarkSkills #DarkModal #DarkModal-content .Modal-lang-subtitle {
+  font-size: 0.8333333333em;
+  margin-left: 1.2em;
+}
+.DarkApp .DarkSkills #DarkModal #DarkModal-content #DarkModal-times {
+  display: inline-block;
+  font-size: 1em;
+  margin-left: 1em;
+  cursor: pointer;
+}
+@media (max-width: 480px) {
+  .DarkApp .DarkSkills #DarkModal #DarkModal-content {
     border-radius: 0.4em;
   }
 }

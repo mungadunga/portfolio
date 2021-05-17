@@ -15,6 +15,9 @@ interface IObj {
    nodejs: ILang;
    git: ILang;
    github: ILang;
+   d3: ILang;
+   markdown: ILang;
+
 }
 
 let options: IObj = {
@@ -91,8 +94,8 @@ let options: IObj = {
                <ul>
                   <li>State and props</li>
                   <li>Functional and class components</li>
-                  <li>Component lifecycle (ed componentDidMount()...)</li>
-                  <li>TypeScript react + tsconfig to make the perfect projec setup</li>
+                  <li>Component lifecycle (eg componentDidMount()...)</li>
+                  <li>TypeScript react + tsconfig to make the perfect project setup</li>
                </ul>
             </div>
          </>
@@ -231,4 +234,40 @@ let options: IObj = {
          </>
       )
    },
+   d3: {
+      title: "Data-Driven Documents",
+      overall: "Overall: 4 / 10",
+      display: () => (
+         <>
+            <p className="Modal-lang-title">{options.d3.title}</p>
+            <p className="Modal-lang-overall">{options.d3.overall}</p>
+            <br />
+            <div className="Modal-lang-description">
+               <ul>
+                  <li>Make basic charts, graphs and tables</li>
+                  <li>Click here to see an example: https://mungadunga.github.io/Francium/index.html</li>
+                  <li>D3 is actually frontend but i'm putting it here just to fix the page layout lol</li>
+               </ul>
+            </div>
+         </>
+      )
+   },
+   markdown: {
+      title: "Markdown",
+      overall: "Overall: 9 / 10",
+      display: () => (
+         <>
+            <p className="Modal-lang-title">{options.markdown.title}</p>
+            <p className="Modal-lang-overall">{options.markdown.overall}</p>
+            <br />
+            <div className="Modal-lang-description">
+               <ul>
+                  <li>Make a well organised markdown page</li>
+                  <li>Use html tags to improve it</li>
+               </ul>
+            </div>
+         </>
+      )
+   },
+
 }
