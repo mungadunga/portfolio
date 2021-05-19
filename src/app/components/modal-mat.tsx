@@ -17,7 +17,7 @@ interface IObj {
    github: ILang;
    d3: ILang;
    markdown: ILang;
-
+   deno: ILang;
 }
 
 let options: IObj = {
@@ -269,5 +269,18 @@ let options: IObj = {
          </>
       )
    },
-
+   deno: {
+      title: "Deno",
+      overall: "Overall: 3 / 10",
+      display: () => (
+         <>
+            <p className="Modal-lang-title">{options.deno.title}</p>
+            <p className="Modal-lang-overall">{options.deno.overall}</p>
+            <br />
+            <div className="Modal-lang-description">
+               <p className="Modal-lang-description">No description</p>
+            </div>
+         </>
+      )
+   },
 }

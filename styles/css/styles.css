@@ -157,14 +157,14 @@ body {
   font-size: 0.8333333333em;
   margin-left: 1.2em;
 }
-.LightApp .LightSkills #LightModal #LightModal-content #DarkModal-times {
+.LightApp .LightSkills #LightModal #LightModal-content #LightModal-times {
   display: inline-block;
   font-size: 1em;
   margin-left: 1em;
   cursor: pointer;
 }
 @media (max-width: 480px) {
-  .LightApp .LightSkills #LightModal #DarkModal-content {
+  .LightApp .LightSkills #LightModal #LightModal-content {
     border-radius: 0.4em;
   }
 }

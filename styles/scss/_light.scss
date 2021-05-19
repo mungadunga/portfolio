@@ -141,7 +141,7 @@
                font-size: $fontSize / 1.2;
                margin-left: $fontSize * 1.2;
             }
-            #DarkModal-times {
+            #LightModal-times {
                display: inline-block;
                font-size: $fontSize;
                margin-left: $fontSize;
@@ -149,7 +149,7 @@
             }
          }
          @media (max-width: 480px){
-            #DarkModal-content {
+            #LightModal-content {
                border-radius: 0.4em;
             }
          }
