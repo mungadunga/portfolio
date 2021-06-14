@@ -87,6 +87,18 @@ body {
 .LightApp .LightSkills .LightSkills-container .LightSkills-logo {
   margin: 10px;
 }
+@media (min-width: 0px) {
+  .LightApp .LightSkills .LightSkills-container .LightSkills-logo {
+    height: 60px;
+    width: 60px;
+  }
+}
+@media (min-width: 400px) {
+  .LightApp .LightSkills .LightSkills-container .LightSkills-logo {
+    height: 80px;
+    width: 80px;
+  }
+}
 .LightApp .LightSkills .LightSkills-container .LightSkills-logo:hover {
   transition: 100ms;
   cursor: pointer;
@@ -106,8 +118,15 @@ body {
     transition: 400ms;
   }
 }
+@media (max-width: 1000px) {
+  .LightApp .LightSkills .LightSkills-container {
+    display: grid;
+    grid-template-columns: 400px;
+  }
+}
 @media (max-width: 480px) {
   .LightApp .LightSkills .LightSkills-container {
+    display: flex;
     flex-direction: column;
     overflow: visible;
     text-align: center;

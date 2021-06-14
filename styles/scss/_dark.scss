@@ -74,6 +74,18 @@
          .DarkSkills-logo {
             margin: 10px;
          }
+         @media (min-width: 0px){
+            .LightSkills-logo {
+               height: 60px;
+               width: 60px;
+            }
+         }
+         @media (min-width: 400px){
+            .LightSkills-logo {
+               height: 80px;
+               width: 80px;
+            }
+         }
          .DarkSkills-logo:hover {
             transition: 100ms;
             cursor: pointer;
@@ -93,8 +105,15 @@
             }
          }
       }
+      @media (max-width: 1000px){
+         .LightSkills-container {
+            display: grid;
+            grid-template-columns: 400px;
+         }
+      }
       @media (max-width: 480px){
-         .DarkSkills-container {
+         .LightSkills-container {
+            display: flex;
             flex-direction: column;
             overflow: visible;
             text-align: center;
