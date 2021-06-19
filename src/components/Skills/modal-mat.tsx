@@ -20,7 +20,7 @@ interface IObj {
    deno: ILang;
 }
 
-let options: IObj = {
+export const options: IObj = {
    javascript: {
       title: "JavaScript",
       overall: "Overall: 9/10",

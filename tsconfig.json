@@ -1,25 +1,26 @@
 {
   "compilerOptions": {
-    // No module system, concatenated file
-    "module": "none",
-
-    // Set React as the JSX factory
-    "jsx": "react",
-
-    // Resolve modules using Node-resolution algorithm
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
     "moduleResolution": "node",
-
-    // Target ES6 for more modern browsers
-    "target": "es6",
-
-    // Include typings from built-in lib declarations
-    "lib": ["es2015", "dom", "dom.iterable"],
-
-    // Include module source maps for debugging
-    "sourceMap": true,
-
-    // Output to single concatenated file
-    "outFile": "dist/script.js"
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
   },
-  "include": ["src"]
+  "include": [
+    "src"
+  ]
 }

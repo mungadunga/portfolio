@@ -1,5 +1,9 @@
-const Stats: React.FC<App.props> = props => {
-   const [precise, setPrecise] = React.useState(false);
+import React, { useState } from "react";
+
+import { IThemeProps } from '../../material';
+
+const Stats: React.FC<IThemeProps> = props => {
+   const [precise, setPrecise] = useState(false);
    
    return (
       <div>
@@ -9,3 +13,5 @@ const Stats: React.FC<App.props> = props => {
       </div>
    )
 }
+
+export default Stats;

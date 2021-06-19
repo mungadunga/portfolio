@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  overflow-x: hidden;
+}
+.Modal-lang-title {
+  font-size: 1em;
+  margin-left: 1em;
+}
+.Modal-lang-overall {
+  font-size: 0.5em;
+  margin-left: 1.8em;
+}
+.Modal-lang-subtitle {
+  font-size: 0.83em;
+  margin-left: 1.2em;
+}
