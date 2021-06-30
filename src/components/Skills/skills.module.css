@@ -77,13 +77,13 @@
    background-color: white;
    margin: 0.5em;
    border-radius: 0.5em;
-   transition: 400ms;
+   transition: 200ms;
    box-shadow: 13px 13px 10px 7px rgba(0, 0, 0, 0.41);
 }
 @media (min-width: 480px) {
    .LightSkills-smallcontainer1:hover, .LightSkills-smallcontainer2:hover, .LightSkills-smallcontainer3:hover {
       transform: scale(1.05);
-      transition: 400ms;
+      transition: 200ms;
    }
 }
 #LightModal {
@@ -199,12 +199,12 @@
    background-color: white;
    margin: 0.5em;
    border-radius: 0.5em;
-   transition: 400ms;
+   transition: 200ms;
 }
 @media (min-width: 480px) {
    .DarkSkills-smallcontainer1:hover, .DarkSkills-smallcontainer2:hover, .DarkSkills-smallcontainer3:hover {
       transform: scale(1.05);
-      transition: 400ms;
+      transition: 200ms;
    }
 }
 #DarkModal {
