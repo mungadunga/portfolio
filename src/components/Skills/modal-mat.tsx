@@ -20,7 +20,7 @@ interface IObj {
    deno: ILang;
 }
 
-export const showModal = (b, cur) => b && cur;
+export const showModal = (b: boolean, cur: any) => b && cur;
 
 export const options: IObj = {
    javascript: {
