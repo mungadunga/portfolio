@@ -1,13 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { IThemeProps, skills } from '../../material';
-import { options } from './modal-mat';
+import { options, showModal } from './modal-mat';
 import s from './skills.module.css';
 
 const Skills: React.FC<IThemeProps> = props => {
-
+   
    const [modal, setModal] = useState(false); // modal state
    const [text, setText]: any = useState(''); // store modal text
+   
+   const [width, setWidth] = useState(window.innerWidth / 35 + 20);
+
+   useEffect(() => {
+      setWidth(window.innerWidth / 35 + 20);
+   }, [window.innerWidth]);
 
    const format: skills.types.format = jsx => (
       <div id={s[`${props.theme}Modal`]}>
@@ -23,26 +29,40 @@ const Skills: React.FC<IThemeProps> = props => {
       setText(format(cur));
    };
 
-   const showModal: skills.types.showModal = (b, cur) => b ? cur : '';
-
-
-   // text styles
-   const width: number = window.innerWidth / 35 + 20; // get window width
-   const styles = {
+   // text styles // get window width
+   const fontStyles = {
       fontSize: width
    }
-   
    // logo styles
-   let logoSize: number = window.innerWidth / 50 + 40;
-   if (window.innerWidth < 481) {
+   let logoSize: number = width / 60 + 50;
+   if (width < 481) {
       logoSize *= 1.6;
    }
-
+   // grid
+   let gridStyles: {} | boolean = false;
+   gridStyles = {
+      display: 'flex',
+      flexDirection: 'row',
+      overflow: 'visible',
+      textAlign: 'center'
+   }
+   if(window.innerWidth <= 1100){
+      gridStyles = {
+         display: "grid",
+         gridTemplateColumns: `450px`
+      };
+   }
+   if(window.innerWidth <= 600){
+      gridStyles = {
+         display: "grid",
+         gridTemplateColumns: `${window.innerWidth * 80 / 100}px`
+      };
+   }
 
    return ( // i'm sorry
-      <div className={s[`${props.theme}Skills`]} style={styles}>
+      <div className={s[`${props.theme}Skills`]} style={fontStyles}>
          <p className={s[`${props.theme}Skills-title`]}>My Skills</p>
-         <div className={s[`${props.theme}Skills-container`]}>
+         <div className={s[`${props.theme}Skills-container`]} style={gridStyles}>
             <div className={s[`${props.theme}Skills-smallcontainer1`]}>
                <h1 className={s[`${props.theme}Skills-frontend-title`]} style={{ fontSize: width / 1.5 }}>Front-End</h1>
                <div className={s[`${props.theme}Skills-frontend`]}>
