@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import { IThemeProps } from '../../material';
+import './stats.css';
 
 const Stats: React.FC<IThemeProps> = props => {
    const [precise, setPrecise] = useState(false);

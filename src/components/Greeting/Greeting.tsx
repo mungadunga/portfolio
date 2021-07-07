@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { IThemeProps } from '../../material';
-import s from './greeting.module.css';
+import './greeting.css';
 
 const Greeting: React.FC<IThemeProps> = props => {
    const adjustFontSize = (reg: boolean): {} => {
@@ -16,9 +16,9 @@ const Greeting: React.FC<IThemeProps> = props => {
       });
    };
    return (
-      <div className={s[`${props.theme}Greeting`]}>
-         <p className={s[`${props.theme}Greeting-title`]} style={adjustFontSize(true)}>Hey, I'm Munga!</p>
-         <em className={s[`${props.theme}Greeting-desc`]} style={adjustFontSize(false)}>a web developer</em>
+      <div className={`${props.theme}Greeting`}>
+         <p className={`${props.theme}Greeting-title`} style={adjustFontSize(true)}>Hey, I'm Munga!</p>
+         <em className={`${props.theme}Greeting-desc`} style={adjustFontSize(false)}>a web developer</em>
       </div>
    );
 }
