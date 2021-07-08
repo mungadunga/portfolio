@@ -4,11 +4,8 @@
    height: 100%;
    padding-bottom: 50%;
    background-color: white;
-}
-@media (max-width: 480px) {
-   .LightSkills {
-      height: 150vh;
-   }
+   padding-bottom: 1%;
+   height: auto;
 }
 .LightSkills-title {
    text-decoration: underline #eb4034;
@@ -125,13 +122,9 @@
 
 .DarkSkills {
    height: 100%;
-   padding-bottom: 50%;
    background-color: black;
-}
-@media (max-width: 480px) {
-   .DarkSkills {
-      height: 150vh;
-   }
+   padding-bottom: 1%;
+   height: auto;
 }
 .DarkSkills-title {
    text-decoration: underline #eb4034;
