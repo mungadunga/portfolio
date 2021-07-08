@@ -1,11 +1,13 @@
 // react stuff
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
+
 // components
 import Greeting from './components/Greeting/Greeting';
 import Skills from './components/Skills/Skills';
+
 // styles and material
-import s from './index.module.css';
+import './index.css';
 import { IThemeProps } from './material';
 
 
@@ -28,18 +30,18 @@ const App: React.FC = () => {
 
    useEffect(() => {
       let parsedTheme = localStorage.getItem("theme") || true;
-      parsedTheme === 'true' ? parsedTheme = true : parsedTheme = false;
-      setTheme(parsedTheme)
+      parsedTheme = parsedTheme === 'true';
+      setTheme(parsedTheme);
    }, []);
 
    useEffect(() => {
-      localStorage.setItem("theme", theme)
+      localStorage.setItem("theme", theme);
    }, [theme]);
 
    return (
-      <div className={theme ? s.DarkApp : s.LightApp}>
+      <div className={theme ? 'DarkApp' : 'LightApp'}>
          <header> {/* Header, dark / light mode button  */}
-            <button onClick={() => setTheme(!theme)} className={theme ? s.DarkButton : s.LightButton}><i className={theme ? "fas fa-moon" : "fas fa-sun"}></i></button>
+            <button onClick={() => setTheme(!theme)} className={theme ? 'DarkButton' : 'LightButton'}><i className={theme ? "fas fa-moon" : "fas fa-sun"}></i></button>
          </header>
          {/* content  */}
          <Main theme={theme ? "Dark" : "Light"} />

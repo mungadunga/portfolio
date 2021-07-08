@@ -23,19 +23,19 @@
 /* DARK  */
 
 .DarkApp header {
-   display: flex;
-   justify-content: center;
-   height: 8vh;
-   background-color: black;
+  display: flex;
+  justify-content: center;
+  height: 8vh;
+  background-color: black;
 }
 .DarkButton {
-   transition: 600ms;
-   padding: 10px;
-   margin: 4px 2px;
-   border-radius: 100px;
-   cursor: pointer;
-   height: 50px;
-   width: 50px;
-   border: 2px solid #999999;
-   font-size: 1.25em;
+  transition: 600ms;
+  padding: 10px;
+  margin: 4px 2px;
+  border-radius: 100px;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  border: 2px solid #999999;
+  font-size: 1.25em;
 }
