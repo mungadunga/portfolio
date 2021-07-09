@@ -29,7 +29,7 @@ const Skills: React.FC<IThemeProps> = props => {
       setText(format(cur));
    };
 
-   // text styles // get window width
+   // text styles
    const fontStyles = {
       fontSize: width
    }

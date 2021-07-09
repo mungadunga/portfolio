@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom';
 // components
 import Greeting from './components/Greeting/Greeting';
 import Skills from './components/Skills/Skills';
+import Stats from './components/Stats/Stats';
 
 // styles and material
 import './index.css';
@@ -18,7 +19,7 @@ const Main: React.FC<IThemeProps> = props => {
       <div>
          <Greeting theme={props.theme}/>
          <Skills theme={props.theme}/>
-         {/* <Stats theme={props.theme}/> */}
+         <Stats theme={props.theme}/>
       </div>
    );
 };
