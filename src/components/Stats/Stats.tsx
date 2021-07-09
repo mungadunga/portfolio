@@ -22,10 +22,10 @@ const Stats: React.FC<IThemeProps> = props => {
    }
    
    return (
-      <div>
-         <p className="stats-title1" style={fontStyles}>My Tools</p>
-         <img src={curImg} alt="circular graph" width={imageWidth(window.innerWidth)} id="stats-circular-graph"/>
-         <button onClick={() => setPrecise(!precise)} id='stats-precise-button'>{precise ? "Set to normal" : "Set to precise"}</button>
+      <div className={`${props.theme}Stats`}>
+         <p className={`${props.theme}Stats-title1`} style={fontStyles}>My Tools</p>
+         <img src={curImg} alt="circular graph" width={imageWidth(window.innerWidth)} id={`${props.theme}Stats-circular-graph`}/>
+         <button onClick={() => setPrecise(!precise)} id={`${props.theme}Stats-precise-button`}>{precise ? "Set to normal" : "Set to precise"}</button>
          {/* <img src={ScreenTime} alt="screen time" /> */}
       </div>
    )

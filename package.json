@@ -1,12 +1,15 @@
 {
   "name": "new-portfolio",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "private": true,
+  "homepage": "https://mungadunga.github.io/portfolio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b gh-pages -d build"
   },
   "dependencies": {
     "react": "^17.0.2",
