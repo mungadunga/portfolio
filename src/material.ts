@@ -1,6 +1,8 @@
 export interface IThemeProps { theme: "Light" | "Dark"; }
 
-export namespace main {}
+export namespace nApp {
+   export type themeConvertToString = (t: boolean) => "Dark" | "Light";
+}
 export namespace skills {
    export namespace types {
       export type format = (jsx: JSX.Element) => JSX.Element; // format JSX according to clicked button

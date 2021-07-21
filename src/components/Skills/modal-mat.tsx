@@ -18,6 +18,7 @@ interface IObj {
    d3: ILang;
    markdown: ILang;
    deno: ILang;
+   python: ILang;
 }
 
 export const showModal = (b: boolean, cur: any) => b && cur;
@@ -285,4 +286,18 @@ export const options: IObj = {
          </>
       )
    },
+   python: {
+      title: "Python",
+      overall: "Overall: 6 / 10",
+      display: () => (
+         <>
+            <p className="Modal-lang-title">{options.python.title}</p>
+            <p className="Modal-lang-overall">{options.python.overall}</p>
+            <br />
+            <div className="Modal-lang-description">
+               <p className="Modal-lang-description">No description (yet)</p>
+            </div>
+         </>
+      )
+   }
 }

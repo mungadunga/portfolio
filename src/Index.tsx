@@ -9,43 +9,37 @@ import Stats from './components/Stats/Stats';
 
 // styles and material
 import './index.css';
-import { IThemeProps } from './material';
+import { nApp } from './material';
 
 
-// content
-
-const Main: React.FC<IThemeProps> = props => {
-   return (
-      <div>
-         <Greeting theme={props.theme}/>
-         <Skills theme={props.theme}/>
-         <Stats theme={props.theme}/>
-      </div>
-   );
-};
-
-// actual main component
 
 const App: React.FC = () => {
    const [theme, setTheme]: any = useState(true);
-
+   const themeConvertToString: nApp.themeConvertToString = t => t ? "Dark" : "Light";
+   
    useEffect(() => {
       let parsedTheme = localStorage.getItem("theme") || true;
       parsedTheme = parsedTheme === 'true';
       setTheme(parsedTheme);
    }, []);
-
+   
    useEffect(() => {
       localStorage.setItem("theme", theme);
    }, [theme]);
-
+   
    return (
       <div className={theme ? 'DarkApp' : 'LightApp'}>
-         <header> {/* Header, dark / light mode button  */}
+         <header>
             <button onClick={() => setTheme(!theme)} className={theme ? 'DarkButton' : 'LightButton'}><i className={theme ? "fas fa-moon" : "fas fa-sun"}></i></button>
          </header>
-         {/* content  */}
-         <Main theme={theme ? "Dark" : "Light"} />
+         <div>
+            <Greeting theme={themeConvertToString(theme)}/>
+            <Skills theme={themeConvertToString(theme)}/>
+            <Stats theme={themeConvertToString(theme)}/>
+         </div>
+         <footer>
+            {/* nothin here yet */}
+         </footer>
       </div>
    )
 };
