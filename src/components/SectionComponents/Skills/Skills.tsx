@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import { FC, skills } from '../../material';
+import { FC, skills } from '../../../material';
 import { options, showModal } from './modal-mat';
 import './skills.css';
 import Python from './assets/python.png';

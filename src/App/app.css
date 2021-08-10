@@ -1,0 +1,38 @@
+/* GLOBAL */
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+:root {
+  --main-dark: black;
+  --main-light: white;
+  --main-theme: #eb4034;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  overflow-x: hidden;
+}
+
+/* LIGHT  */
+
+.LightApp header {
+  display: flex;
+  justify-content: center;
+  height: 8vh;
+  background-color: white;
+}
+
+/* DARK  */
+
+.DarkApp {
+  background-color: black;
+  padding-bottom: 0.001%;
+}
+.DarkApp header {
+  display: flex;
+  justify-content: center;
+  height: 8vh;
+  background-color: black;
+}

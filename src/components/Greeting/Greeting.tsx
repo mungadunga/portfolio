@@ -1,9 +1,7 @@
-import React from 'react';
-
-import { IThemeProps } from '../../material';
+import { FC } from '../../material';
 import './greeting.css';
 
-const Greeting: React.FC<IThemeProps> = props => {
+const Greeting: FC<{theme: string;}> = props => {
    const adjustFontSize = (reg: boolean): {} => {
       const width = window.innerWidth / 30 + 20; // get window width
       if(reg){ // option 1: get title size

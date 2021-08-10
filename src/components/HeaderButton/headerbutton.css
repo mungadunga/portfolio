@@ -1,0 +1,16 @@
+.LightButton {
+   background-color: #42a2da;
+   color: #f5cb11;
+
+}
+.Button {
+   transition: 600ms;
+   padding: 10px;
+   margin: 4px 2px;
+   border-radius: 100px;
+   cursor: pointer;
+   height: 50px;
+   width: 50px;
+   border: 2px solid #999999;
+   font-size: 1.25em;
+}

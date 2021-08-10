@@ -1,6 +1,6 @@
 import React, {  useState } from "react";
 
-import { FC } from '../../material';
+import { FC } from '../../../material';
 import './stats.css';
 
 // images
