@@ -1,12 +1,6 @@
-.LightButton {
-   background-color: #42a2da;
-   color: #f5cb11;
-
-}
 .Button {
-   transition: 600ms;
    padding: 10px;
-   margin: 4px 2px;
+   margin: 1vh;
    border-radius: 100px;
    cursor: pointer;
    height: 50px;
@@ -14,3 +8,26 @@
    border: 2px solid #999999;
    font-size: 1.25em;
 }
+/* sun button */
+.LightButton {
+   background-color: #42a2da;
+   color: #f5cb11;
+}
+.LightButton:hover { background-color: #3c94c7; }
+.DarkButton:hover {
+   background-color: rgb(211, 210, 210);
+}
+/* instagram logo  */
+.LightInstagram {
+   background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+   color: white;
+   font-weight: 400;
+   font-size: 1.5em;
+}
+.LightInstagram:hover {    background: radial-gradient(circle farthest-corner at 35% 90%, #cc9f50, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #d4a554, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #a5265d, transparent), linear-gradient(#433c88, #942671 30%, #bb334e 50%, #d46430 70%, #ddac5e 100%);}
+.DarkInstagram {
+   background-color: white;
+   color: black;
+   font-size: 1.5em;
+}
+.DarkInstagram:hover { background-color: rgb(211, 210, 210); }
