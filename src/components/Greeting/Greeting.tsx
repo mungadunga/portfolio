@@ -15,7 +15,7 @@ const Greeting: FC<{theme: string;}> = props => {
    };
    return (
       <div className={`${props.theme}Greeting`}>
-         <p className={`${props.theme}Greeting-title`} style={adjustFontSize(true)}>Hey, I'm Munga!</p>
+         <p className={`${props.theme}Greeting-title`} style={adjustFontSize(true)}>Hey, I'm Marc!</p>
          <em className={`${props.theme}Greeting-desc`} style={adjustFontSize(false)}>a web developer</em>
       </div>
    );
